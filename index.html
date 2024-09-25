@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Barmaja<span>Online</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="subscribe">Subscribe</a>
+        </div>
+    </header>
+
+    <section id="home" class="cover">
+        <div class="cover-content">
+            <h2>Hello, my name is</h2>
+            <h1>Abdelrahman</h1>
+            <p>I'm a <span>Full-Stack Developer</span>.</p>
+            <a href="#" class="btn">Download CV</a>
+            <div class="social-links">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="cover-image">
+            <img src="images/profile-picture.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/about-me.jpg" alt="About Me">
+                <div class="about-text">
+                    <p>Hello! I'm Abdelrahman, a passionate Full-Stack Developer with a love for creating innovative web solutions. I have a strong background in both front-end and back-end development and am dedicated to delivering high-quality projects. Feel free to explore my skills and services below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="images/web-design.jpg" alt="Web Design">
+                    <h3>Web Design</h3>
+                    <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/web-development.jpg" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Building robust and scalable web applications using the latest technologies.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/seo.jpg" alt="SEO">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines to drive more traffic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>HTML & CSS</h3>
+                    <div class="skill-bar html"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar javascript"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <div class="skill-bar react"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Node.js</h3>
+                    <div class="skill-bar nodejs"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Personal Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,380 @@
+/* إعدادات أساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ترويسة الموقع */
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    color: #e91e63;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .logo span {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e91e63;
+}
+
+.subscribe {
+    color: #fff;
+    background-color: #e91e63;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.subscribe:hover {
+    background-color: #c2185b;
+}
+
+/* صورة الغلاف */
+.cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background: #111;
+    min-height: 100vh;
+}
+
+.cover-content {
+    text-align: left;
+    max-width: 50%;
+    animation: fadeInLeft 1.5s;
+}
+
+.cover-content h2 {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.cover-content h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cover-content p {
+    font-size: 24px;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.cover-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #e91e63;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cover-content .btn:hover {
+    background-color: #c2185b;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.cover-image img {
+    width: 300px;
+    border-radius: 10px;
+    animation: fadeInRight 1.5s;
+}
+
+/* قسم About Me */
+#about {
+    background: #222;
+    padding: 60px 20px;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about .about-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+#about .about-text {
+    max-width: 600px;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+#about p {
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+/* قسم Services */
+#services {
+    padding: 60px 20px;
+    background: #333;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+/* قسم Skills */
+#skills {
+    padding: 60px 20px;
+    background: #222;
+}
+
+#skills h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 20px;
+    border-radius: 10px;
+    background: #444;
+}
+
+.skill-bar.html {
+    width: 90%;
+    background: #e44d26; /* لون مخصص لـ HTML */
+}
+
+.skill-bar.javascript {
+    width: 80%;
+    background: #f0db4f; /* لون مخصص لـ JavaScript */
+}
+
+.skill-bar.react {
+    width: 54%;
+    background: #61dbfb; /* لون مخصص لـ React */
+}
+
+.skill-bar.nodejs {
+    width: 65%;
+    background: #8cc84b; /* لون مخصص لـ Node.js */
+}
+
+/* تذييل الموقع */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #e0e0e0;
+}
+
+/* حركات */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#contact {
+    padding: 60px 20px;
+    background: #333;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e91e63;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #555;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #e91e63;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #c2185b;
+}
